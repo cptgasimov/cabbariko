@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/style.css">
+<title>Welcome</title>
+</head>
+<body>
+<!--Main Page-->
+<div id="main">
+<img src="images/menu_bg.jpg" id="bg">
+<h1>Cabbariko</h1>
+<img src="images/buttons.png" id="buttons">
+<img src="images/snake.png" id="snake">
+
+<button id="start" onclick="start()">Start</button><br>
+<button id="about" onclick="about()">About</button>
+</div>
+
+
+<div id="info">
+	<div id="menuBar">
+		<div id="about">
+			<h1>About</h1>
+		</div>
+		<div id="close"></div>
+	</div>
+
+	<div id="bodyOfInfo">
+	
+		<div id="contentOfBody">
+			<h3>Rules of the game</h3>
+			<p>* Snake becomes bigger by eating apples<br>
+			* Snake cannot turn to the opposite<br>direction<br>
+			* If the snake touches itself or the wall, <br>it will die</p>
+			
+			<h3>How to play?</h3>
+			<p>* To control the snake, use arrows on <br>your keyboard</p>
+			
+			<h4>Created by Cpt *GASIMOV*</h4>
+		</div>
+		
+	</div>
+</div>
+
+<!--Canvas of the game-->
+<canvas id="myCanvas" width="608" height="608"></canvas>
+
+<script src="js/game.js"></script>
+<script src="js/info.js"></script>
+</body>
+</html>

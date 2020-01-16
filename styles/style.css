@@ -1,0 +1,166 @@
+/*create our own fonts*/
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/amender-tu/Amender_Tu.ttf");
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url("../fonts/angella/Angella_Outline_demo.otf");
+}
+
+/*add styles to the main page of the game*/
+
+h1 {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: myFont;
+	font-size: 90px;
+	color: #FFD500;
+	top: 10px;
+	left: 160px;
+}
+
+#bg {
+	position: absolute;
+	z-index: -1;
+
+	opacity: 0.8;
+}
+
+#buttons {
+	position: relative;
+	top: 180px;
+	left: 230px;
+	height: 220px;
+}
+
+#snake {
+	position: relative;
+	left: 230px;
+	top: 165px;
+	width: 200px;
+}
+
+button {
+	position: relative;
+	background: none;
+	border: none;
+	font-family: myFont2;
+	font-size: 40px;
+	color: #FF0101;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#start {
+	right: 150px;
+	top: 30px;
+}
+
+#about {
+	left: 285px;
+	top: 30px;
+	font-size: 30px;
+}
+
+#myCanvas { 
+	display: none;
+	background-image: url("../images/background.png");
+}
+
+#info {
+	display: none;
+	height: 650px;
+	width: 1000px;
+	position: absolute;
+	top: 100px;
+	left: 450px;
+}
+
+#menuBar{
+	height: 130px;
+}
+
+#menuBar #about {
+	background-image: url("../images/about.png");
+	background-repeat: no-repeat;
+	background-size: 430px 130px;
+	height: 120px;
+	width: 420px;
+	left: 300px;
+	position: relative;
+	top: 10px;
+	opacity: 0.8;
+}
+
+#about h1 {
+	font-size: 65px;
+	position: relative;
+	top: 25px;
+	left: 100px;
+	color: green;
+}
+
+#menuBar #close {
+	background-image: url("../images/close.png");
+	background-repeat: no-repeat;
+	background-size: 120px 120px;
+	height: 110px;
+	width: 110px;
+	left: 830px;
+	bottom: 110px;
+	position: relative;
+	opacity: 0.8;
+}
+
+#bodyOfInfo {
+	height: 520px;
+	width: 640px;
+	background-image: url("../images/body.png");
+	background-repeat: no-repeat;
+	background-size: 650px 530px;
+	position: relative;
+	opacity: 0.8;
+	left: 180px;
+	bottom: 20px;
+}
+
+#bodyOfInfo #contentOfBody {
+	position: relative;
+	left: 85px;
+	top: 30px;
+	height: 450px;
+	width: 500px;
+}
+
+#contentOfBody h3 {
+	font-family: myFont2;
+	font-size: 40px;
+	color: #FF0101;
+	font-weight: bold;
+}
+
+#contentOfBody h4 {
+	font-family: myFont2;
+	font-size: 30px;
+	color: blue;
+	font-weight: bold;
+	position: relative;
+	left: 40px;
+	top: 40px;
+}
+
+#contentOfBody h3:nth-child(3){
+	margin-top: -40px;
+}
+
+#contentOfBody p {
+	font-family: myFont2;
+	font-size: 23px;
+	color: green;
+	font-weight: bold;
+	position: relative;
+	bottom: 30px;
+}
